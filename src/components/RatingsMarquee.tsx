@@ -10,8 +10,11 @@ const ratings = [
 ];
 
 const RatingsMarquee = () => (
-  <section className="bg-foreground py-4 overflow-hidden border-y-4 border-primary">
-    <div className="flex animate-marquee whitespace-nowrap">
+  <section className="bg-foreground py-4 overflow-hidden border-y-4 border-primary relative">
+    {/* Glass sheen */}
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent" />
+    
+    <div className="flex animate-marquee whitespace-nowrap relative">
       {[...ratings, ...ratings].map((r, i) => (
         <div key={i} className="flex items-center gap-3 mx-8">
           <div className="flex gap-0.5">
