@@ -11,6 +11,8 @@ import PricingSection from "@/components/PricingSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import StatsStrip from "@/components/StatsStrip";
 import FAQSection from "@/components/FAQSection";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import OfferPopup from "@/components/OfferPopup";
 
 const Index = () => (
   <>
@@ -29,6 +31,8 @@ const Index = () => (
       <FAQSection />
     </main>
     <Footer />
+    <WhatsAppButton />
+    <OfferPopup />
   </>
 );
 
