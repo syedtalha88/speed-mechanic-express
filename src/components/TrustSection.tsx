@@ -1,4 +1,5 @@
 import { Shield, Award, ThumbsUp, Clock, Users, Wrench } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const trustItems = [
   { icon: Shield, title: "100% Genuine Parts", desc: "We only use OEM & branded spare parts for every bike service. No cheap alternatives, ever.", stat: "100%", statLabel: "Genuine" },
@@ -11,53 +12,45 @@ const trustItems = [
 
 const TrustSection = () => (
   <section className="section-padding bg-background relative overflow-hidden">
-    {/* Subtle background texture */}
     <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, hsl(var(--foreground)) 0, hsl(var(--foreground)) 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px' }} />
     
     <div className="container mx-auto relative">
-      <div className="text-center mb-16">
-        <span className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary mb-3">
-          <Shield className="h-4 w-4" /> Why Trust Us
-        </span>
-        <h2 className="font-heading text-3xl md:text-4xl font-black uppercase">
-          Built on <span className="text-primary">Trust</span> & Precision
-        </h2>
-        <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-          We don't just fix bikes. We build lasting relationships with riders who demand the best doorstep bike service in Hyderabad.
-        </p>
-      </div>
+      <ScrollReveal variant="mechanical-slide">
+        <div className="text-center mb-10 md:mb-16">
+          <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
+            <Shield className="h-4 w-4" /> Why Trust Us
+          </span>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
+            Built on <span className="text-primary">Trust</span> & Precision
+          </h2>
+          <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
+            We don't just fix bikes. We build lasting relationships with riders who demand the best doorstep bike service in Hyderabad.
+          </p>
+        </div>
+      </ScrollReveal>
 
-      {/* Alternating row layout - NO cards */}
       <div className="space-y-0">
         {trustItems.map(({ icon: Icon, title, desc, stat, statLabel }, idx) => (
-          <div
-            key={title}
-            className={`group flex flex-col md:flex-row items-center gap-6 md:gap-12 py-8 border-b border-border last:border-b-0 transition-all duration-500 hover:bg-primary/[0.02] ${
-              idx % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Stat highlight */}
-            <div className="shrink-0 w-28 h-28 flex flex-col items-center justify-center glass-primary transition-all duration-500 group-hover:shadow-lg">
-              <span className="font-heading text-2xl md:text-3xl font-black text-primary">{stat}</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{statLabel}</span>
+          <ScrollReveal key={title} variant={idx % 2 === 0 ? "fade-left" : "fade-right"} delay={idx * 80}>
+            <div className={`group flex flex-col sm:flex-row items-center gap-4 md:gap-6 lg:gap-12 py-6 md:py-8 border-b border-border last:border-b-0 transition-all duration-500 hover:bg-primary/[0.02] ${
+              idx % 2 === 1 ? "sm:flex-row-reverse" : ""
+            }`}>
+              <div className="shrink-0 w-20 h-20 md:w-28 md:h-28 flex flex-col items-center justify-center glass-primary transition-all duration-500 group-hover:shadow-lg">
+                <span className="font-heading text-xl md:text-3xl font-black text-primary">{stat}</span>
+                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{statLabel}</span>
+              </div>
+              <div className="shrink-0">
+                <Icon className="h-6 w-6 md:h-8 md:w-8 text-primary transition-transform duration-500 group-hover:scale-125 group-hover:rotate-[-8deg]" />
+              </div>
+              <div className={`flex-1 text-center sm:text-left ${idx % 2 === 1 ? "sm:text-right" : ""}`}>
+                <h3 className="font-heading text-base md:text-lg font-bold uppercase mb-1">{title}</h3>
+                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed max-w-md">{desc}</p>
+              </div>
+              <div className="hidden md:block w-32 h-1.5 bg-border overflow-hidden">
+                <div className="h-full bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out" />
+              </div>
             </div>
-
-            {/* Icon */}
-            <div className="shrink-0">
-              <Icon className="h-8 w-8 text-primary transition-transform duration-500 group-hover:scale-125 group-hover:rotate-[-8deg]" />
-            </div>
-
-            {/* Content */}
-            <div className={`flex-1 ${idx % 2 === 1 ? "md:text-right" : ""}`}>
-              <h3 className="font-heading text-lg font-bold uppercase mb-1">{title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed max-w-md">{desc}</p>
-            </div>
-
-            {/* Progress bar visual */}
-            <div className="hidden md:block w-32 h-1.5 bg-border overflow-hidden">
-              <div className="h-full bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out" />
-            </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>

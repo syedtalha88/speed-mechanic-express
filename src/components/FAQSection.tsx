@@ -1,4 +1,5 @@
 import { Wrench } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollReveal";
 import {
   Accordion,
   AccordionContent,
@@ -20,28 +21,32 @@ const faqs = [
 const FAQSection = () => (
   <section className="section-padding bg-secondary">
     <div className="container mx-auto max-w-3xl">
-      <div className="text-center mb-14">
-        <span className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary mb-3">
-          <Wrench className="h-4 w-4" /> Got Questions?
-        </span>
-        <h2 className="font-heading text-3xl md:text-4xl font-black uppercase">
-          Frequently Asked <span className="text-primary">Questions</span>
-        </h2>
-        <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-          Everything you need to know about our doorstep bike service in Hyderabad.
-        </p>
-      </div>
+      <ScrollReveal variant="mechanical-slide">
+        <div className="text-center mb-10 md:mb-14">
+          <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
+            <Wrench className="h-4 w-4" /> Got Questions?
+          </span>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
+            Everything you need to know about our doorstep bike service in Hyderabad.
+          </p>
+        </div>
+      </ScrollReveal>
 
-      <Accordion type="single" collapsible className="space-y-3">
+      <Accordion type="single" collapsible className="space-y-2 md:space-y-3">
         {faqs.map((faq, i) => (
-          <AccordionItem key={i} value={`faq-${i}`} className="glass-card px-6 data-[state=open]:border-primary/30 transition-all duration-300 hover-glass-glow">
-            <AccordionTrigger className="font-heading text-sm font-bold uppercase tracking-wide hover:no-underline hover:text-primary transition-colors duration-300">
-              {faq.q}
-            </AccordionTrigger>
-            <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
-              {faq.a}
-            </AccordionContent>
-          </AccordionItem>
+          <ScrollReveal key={i} variant="fade-up" delay={i * 60}>
+            <AccordionItem value={`faq-${i}`} className="glass-card px-4 md:px-6 data-[state=open]:border-primary/30 transition-all duration-300 hover-glass-glow">
+              <AccordionTrigger className="font-heading text-xs md:text-sm font-bold uppercase tracking-wide hover:no-underline hover:text-primary transition-colors duration-300 text-left">
+                {faq.q}
+              </AccordionTrigger>
+              <AccordionContent className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                {faq.a}
+              </AccordionContent>
+            </AccordionItem>
+          </ScrollReveal>
         ))}
       </Accordion>
     </div>
