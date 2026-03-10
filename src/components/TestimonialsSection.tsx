@@ -2,12 +2,12 @@ import { Star, Quote, Bike } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const testimonials = [
-  { name: "Rahul Sharma", area: "Madhapur", bike: "RE Classic 350", text: "MotoFix serviced my Classic 350 at my office parking. The mechanic arrived in 25 minutes, was super professional, and my bike runs like new. Best doorstep bike service!", rating: 5 },
-  { name: "Priya Reddy", area: "Gachibowli", bike: "Honda Activa", text: "I was tired of workshop queues. MotoFix picked up my Activa, serviced it, and dropped it back the same day. The free pickup and drop saved me so much time!", rating: 5 },
+  { name: "Rahul Sharma", area: "Madhapur", bike: "RE Classic 350", text: "XpMechanics serviced my Classic 350 at my office parking. The mechanic arrived in 25 minutes, was super professional, and my bike runs like new. Best doorstep bike service!", rating: 5 },
+  { name: "Priya Reddy", area: "Gachibowli", bike: "Honda Activa", text: "I was tired of workshop queues. XpMechanics picked up my Activa, serviced it, and dropped it back the same day. The free pickup and drop saved me so much time!", rating: 5 },
   { name: "Vikram Patel", area: "Kukatpally", bike: "Bajaj Pulsar", text: "Transparent pricing, genuine parts, and a mechanic who actually explained what was wrong. This is how bike service in Hyderabad should be.", rating: 5 },
   { name: "Ananya Devi", area: "Jubilee Hills", bike: "TVS Jupiter", text: "The 30-minute response is real! I booked at 10 AM, mechanic was here by 10:25. No more wasting time at workshops. Incredible convenience!", rating: 5 },
   { name: "Karthik M.", area: "Ameerpet", bike: "Yamaha FZ", text: "Best oil change service ever. The mechanic used premium oil, cleaned the filter, topped up coolant — all at my doorstep. Great value for money.", rating: 5 },
-  { name: "Deepak Rao", area: "Secunderabad", bike: "RE Himalayan", text: "My Himalayan needed brake pads and chain replacement. MotoFix handled it in 2 hours at my home. Their free pickup and drop saved me half a day!", rating: 5 },
+  { name: "Deepak Rao", area: "Secunderabad", bike: "RE Himalayan", text: "My Himalayan needed brake pads and chain replacement. XpMechanics handled it in 2 hours at my home. Their free pickup and drop saved me half a day!", rating: 5 },
 ];
 
 const TestimonialsSection = () => (
@@ -22,7 +22,7 @@ const TestimonialsSection = () => (
             What Our <span className="text-primary">Customers</span> Say
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            Real reviews from real riders who chose MotoFix for doorstep bike service in Hyderabad.
+            Real reviews from real riders who chose XpMechanics for doorstep bike service in Hyderabad.
           </p>
         </div>
       </ScrollReveal>

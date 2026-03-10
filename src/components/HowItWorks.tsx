@@ -1,11 +1,12 @@
-import { Phone, Wrench, Truck, CheckCircle, Cog } from "lucide-react";
+import { Phone, Wrench, Truck, CheckCircle, Cog, FileCheck } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
   { icon: Phone, num: "01", title: "Book Online", desc: "Fill the form or call us. Takes just 30 seconds to get started." },
   { icon: Wrench, num: "02", title: "Mechanic Arrives", desc: "Our certified expert reaches your doorstep within 30 minutes." },
   { icon: Truck, num: "03", title: "Free Pickup", desc: "We pick up your bike, service it with genuine parts, and drop it back." },
-  { icon: CheckCircle, num: "04", title: "Done & Dusted", desc: "Ride your perfectly serviced bike. Zero hassle, total satisfaction." },
+  { icon: FileCheck, num: "04", title: "Service Assurance Card", desc: "Receive a detailed card with mechanic info, parts used, work done & warranty — for total transparency." },
+  { icon: CheckCircle, num: "05", title: "Done & Dusted", desc: "Ride your perfectly serviced bike. Zero hassle, total satisfaction." },
 ];
 
 const HowItWorks = () => (
@@ -24,7 +25,7 @@ const HowItWorks = () => (
             How Doorstep <span className="text-primary">Bike Service</span> Works
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            Getting your bike serviced in Hyderabad has never been easier. Four steps. That's it.
+            Getting your bike serviced in Hyderabad has never been easier. Five steps. That's it.
           </p>
         </div>
       </ScrollReveal>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Wrench, Phone, Mail, MapPin } from "lucide-react";
 
+const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
+
 const Footer = () => (
   <footer className="bg-foreground text-background">
     <div className="container mx-auto px-4 py-10 md:py-16">
@@ -8,7 +10,7 @@ const Footer = () => (
         <div>
           <Link to="/" className="flex items-center gap-2 mb-4">
             <Wrench className="h-6 w-6 text-primary" />
-            <span className="font-heading text-xl font-black">MOTO<span className="text-primary">FIX</span></span>
+            <span className="font-heading text-xl font-black">XP<span className="text-primary">MECHANICS</span></span>
           </Link>
           <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
             Hyderabad's most trusted doorstep bike service. Expert mechanics, genuine parts, zero hassle.
@@ -46,11 +48,11 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-xs md:text-sm font-bold uppercase tracking-wider mb-3 md:mb-4 text-primary">Contact</h4>
           <div className="space-y-3 text-xs md:text-sm text-muted-foreground">
-            <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="h-4 w-4 text-primary" /> +91-98765-43210
+            <a href="tel:+919347732437" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 text-primary" /> +91-93477-32437
             </a>
-            <a href="mailto:hello@motofix.in" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Mail className="h-4 w-4 text-primary" /> hello@motofix.in
+            <a href="mailto:xpmechanics@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail className="h-4 w-4 text-primary" /> xpmechanics@gmail.com
             </a>
             <div className="flex items-start gap-2">
               <MapPin className="h-4 w-4 text-primary mt-0.5" /> Hyderabad, Telangana, India
@@ -60,7 +62,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-muted-foreground/20 mt-8 md:mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
-        <p className="text-[10px] md:text-xs text-muted-foreground">© 2024 MotoFix. All rights reserved.</p>
+        <p className="text-[10px] md:text-xs text-muted-foreground">© 2024 XpMechanics. All rights reserved.</p>
         <div className="flex gap-4">
           <Link to="/terms" className="text-[10px] md:text-xs text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</Link>
           <Link to="/terms" className="text-[10px] md:text-xs text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
