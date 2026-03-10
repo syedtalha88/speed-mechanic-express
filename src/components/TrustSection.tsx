@@ -1,10 +1,11 @@
-import { Shield, Award, ThumbsUp, Clock, Users, Wrench } from "lucide-react";
+import { Shield, Award, ThumbsUp, Clock, Users, Wrench, FileCheck } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const trustItems = [
   { icon: Shield, title: "100% Genuine Parts", desc: "We only use OEM & branded spare parts for every bike service. No cheap alternatives, ever.", stat: "100%", statLabel: "Genuine" },
   { icon: Award, title: "Certified Mechanics", desc: "Every mechanic is trained, background-verified, and certified by industry experts.", stat: "Top 5%", statLabel: "Selected" },
   { icon: ThumbsUp, title: "Satisfaction Guaranteed", desc: "Not happy with the service? We redo it at zero extra cost. No questions asked.", stat: "99.2%", statLabel: "Satisfied" },
+  { icon: FileCheck, title: "Service Assurance Card", desc: "Every service includes a detailed assurance card with mechanic name, photo, parts list, work summary & warranty details — so you know exactly what was done and by whom.", stat: "100%", statLabel: "Transparent" },
   { icon: Clock, title: "On-Time, Every Time", desc: "We guarantee 30-minute arrival at your doorstep or your next bike service is free.", stat: "30", statLabel: "Minutes" },
   { icon: Users, title: "12,000+ Happy Riders", desc: "Trusted by thousands of riders across Hyderabad for doorstep bike service.", stat: "12K+", statLabel: "Riders" },
   { icon: Wrench, title: "Transparent Pricing", desc: "No hidden charges on any service. You pay exactly what's quoted — upfront and honest.", stat: "₹0", statLabel: "Hidden Fees" },

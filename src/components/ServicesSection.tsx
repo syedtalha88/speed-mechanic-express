@@ -2,6 +2,8 @@ import { Wrench, Droplets, Battery, Disc3, Settings, Gauge, ArrowRight, Cog } fr
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
+const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
+
 const services = [
   { icon: Wrench, title: "General Service", desc: "Complete 40-point inspection, cleaning, and tuning — at your doorstep. No workshop visit needed.", price: "₹499" },
   { icon: Droplets, title: "Oil Change", desc: "Premium engine oil replacement with filter cleaning. Free pickup and drop across Hyderabad.", price: "₹299" },
@@ -43,9 +45,9 @@ const ServicesSection = () => (
                   </div>
                   <h3 className="font-heading text-base md:text-lg font-bold uppercase mb-2">{title}</h3>
                   <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mb-4">{desc}</p>
-                  <div className="flex items-center gap-1 text-xs md:text-sm font-bold text-primary uppercase tracking-wider group-hover:gap-3 transition-all duration-300">
+                  <a href={`${WA_LINK}${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs md:text-sm font-bold text-primary uppercase tracking-wider group-hover:gap-3 transition-all duration-300">
                     Book Now <ArrowRight className="h-4 w-4" />
-                  </div>
+                  </a>
                 </div>
               </div>
             ) : (
@@ -60,9 +62,9 @@ const ServicesSection = () => (
                   </div>
                   <h3 className="font-heading text-base md:text-lg font-bold uppercase mb-2">{title}</h3>
                   <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mb-4">{desc}</p>
-                  <div className="flex items-center gap-1 text-xs md:text-sm font-bold text-primary uppercase tracking-wider group-hover:gap-3 transition-all duration-300">
+                  <a href={`${WA_LINK}${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs md:text-sm font-bold text-primary uppercase tracking-wider group-hover:gap-3 transition-all duration-300">
                     Book Now <ArrowRight className="h-4 w-4" />
-                  </div>
+                  </a>
                 </div>
               </div>
             )}

@@ -1,24 +1,26 @@
 import { Check, Wrench, Star, Cog } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
+const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
+
 const plans = [
   {
     name: "Basic Service", price: "₹499",
     desc: "Essential maintenance for everyday riders. Includes free pickup and drop.",
     popular: false,
-    features: ["40-Point Inspection", "Oil Top-Up", "Chain Lubrication", "Brake Adjustment", "Air Filter Cleaning", "Free Pickup & Drop"],
+    features: ["40-Point Inspection", "Oil Top-Up", "Chain Lubrication", "Brake Adjustment", "Air Filter Cleaning", "Free Pickup & Drop", "Service Assurance Card"],
   },
   {
     name: "Pro Service", price: "₹999",
     desc: "Complete bike care for peak performance. Mechanic at your doorstep in 30 min.",
     popular: true,
-    features: ["Everything in Basic", "Full Oil Change (Branded)", "Spark Plug Replacement", "Throttle Cable Adjustment", "Battery Health Check", "6-Month Warranty"],
+    features: ["Everything in Basic", "Full Oil Change (Branded)", "Spark Plug Replacement", "Throttle Cable Adjustment", "Battery Health Check", "6-Month Warranty", "Service Assurance Card"],
   },
   {
     name: "Premium Overhaul", price: "₹2,499",
     desc: "For bikes that deserve the best doorstep service in Hyderabad.",
     popular: false,
-    features: ["Everything in Pro", "Engine Flush & Clean", "Carburetor Tuning", "Full Brake Overhaul", "Electrical Diagnostics", "12-Month Warranty"],
+    features: ["Everything in Pro", "Engine Flush & Clean", "Carburetor Tuning", "Full Brake Overhaul", "Electrical Diagnostics", "12-Month Warranty", "Service Assurance Card"],
   },
 ];
 
@@ -66,7 +68,7 @@ const PricingSection = () => (
                     </div>
                   ))}
                 </div>
-                <button className={`group w-full mechanical-btn font-heading font-bold uppercase py-3.5 md:py-4 text-sm transition-all duration-300 relative overflow-hidden ${
+                <a href={`${WA_LINK}${encodeURIComponent(plan.name)}`} target="_blank" rel="noopener noreferrer" className={`group w-full mechanical-btn font-heading font-bold uppercase py-3.5 md:py-4 text-sm transition-all duration-300 relative overflow-hidden flex items-center justify-center ${
                   plan.popular
                     ? "bg-primary text-primary-foreground hover:bg-accent"
                     : "bg-foreground text-background hover:bg-foreground/90"
@@ -75,7 +77,7 @@ const PricingSection = () => (
                     Book Now
                     <Cog className="h-4 w-4 transition-transform duration-500 group-hover:rotate-180" />
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </ScrollReveal>
