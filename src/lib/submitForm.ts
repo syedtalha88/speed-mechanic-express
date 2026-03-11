@@ -22,14 +22,5 @@ export async function submitForm(data: Record<string, string>, formName: string)
   if (!result.success) {
     throw new Error(result.message || "Form submission failed");
   }
-
-  // Also notify on WhatsApp
-  const waFields = Object.entries(data)
-    .filter(([, v]) => v)
-    .map(([k, v]) => `${k}: ${v}`)
-    .join("%0A");
-  const waMsg = `${formName}:%0A${waFields}`;
-  window.open(`https://wa.me/919347732437?text=${encodeURIComponent(waMsg)}`, "_blank");
-
   return result;
 }
