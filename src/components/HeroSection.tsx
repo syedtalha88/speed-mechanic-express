@@ -19,13 +19,10 @@ const HeroSection = () => {
     }
     setSubmitting(true);
     try {
-      const subject = `New Lead: ${formData.service || "Bike Service"} - ${formData.name}`;
-      const body = `Name: ${formData.name}%0APhone: ${formData.phone}%0ABike: ${formData.brand}%0AService: ${formData.service}%0ALocation: ${formData.location}`;
-      window.open(`mailto:xpmechanics@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`, "_self");
-      
-      const waMsg = `New Lead from Website:%0AName: ${formData.name}%0APhone: ${formData.phone}%0ABike: ${formData.brand}%0AService: ${formData.service}%0ALocation: ${formData.location}`;
-      window.open(`https://wa.me/919347732437?text=${waMsg}`, "_blank");
-      
+      await submitForm(
+        { name: formData.name, phone: formData.phone, bike: formData.brand, service: formData.service, location: formData.location },
+        "New Bike Service Lead"
+      );
       toast.success("Your request has been sent! We'll contact you within 5 minutes.");
       setFormData({ name: "", phone: "", brand: "", service: "", location: "" });
     } catch {
