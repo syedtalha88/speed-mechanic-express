@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Cog, Wrench, Percent, Gift, Zap } from "lucide-react";
 import { toast } from "sonner";
+import { submitForm } from "@/lib/submitForm";
 
 const OfferPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,13 +41,10 @@ const OfferPopup = () => {
     }
     setSubmitting(true);
     try {
-      const subject = `🎁 Offer Lead: ${formData.service || "Bike Service"} - ${formData.name}`;
-      const body = `Name: ${formData.name}%0APhone: ${formData.phone}%0AService: ${formData.service}%0AOffer: 20%25 OFF First Service`;
-      window.open(`mailto:xpmechanics@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`, "_self");
-      
-      const waMsg = `🎁 Offer Lead:%0AName: ${formData.name}%0APhone: ${formData.phone}%0AService: ${formData.service}%0AOffer: 20%25 OFF`;
-      window.open(`https://wa.me/919347732437?text=${waMsg}`, "_blank");
-      
+      await submitForm(
+        { name: formData.name, phone: formData.phone, service: formData.service, offer: "20% OFF First Service" },
+        "🎁 Offer Lead"
+      );
       toast.success("Offer claimed! We'll call you within 5 minutes.");
       setFormData({ name: "", phone: "", service: "" });
       handleClose();

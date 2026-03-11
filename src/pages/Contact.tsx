@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Phone, Mail, MapPin, Clock, Send, Cog, Wrench, MessageCircle } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 import { toast } from "sonner";
+import { submitForm } from "@/lib/submitForm";
 
 const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
 
@@ -20,13 +21,10 @@ const ContactPage = () => {
     }
     setSubmitting(true);
     try {
-      const subject = `Contact Form: ${formData.subject || "General Inquiry"} - ${formData.name}`;
-      const body = `Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-      window.open(`mailto:xpmechanics@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`, "_self");
-      
-      const waMsg = `Contact Form Lead:%0AName: ${formData.name}%0APhone: ${formData.phone}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-      window.open(`https://wa.me/919347732437?text=${waMsg}`, "_blank");
-      
+      await submitForm(
+        { name: formData.name, email: formData.email, phone: formData.phone, subject: formData.subject, message: formData.message },
+        "Contact Form"
+      );
       toast.success("Message sent! We'll get back to you shortly.");
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch {
