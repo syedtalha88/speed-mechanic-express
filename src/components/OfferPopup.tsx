@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Cog, Wrench, Percent, Gift, Zap } from "lucide-react";
 import { toast } from "sonner";
+import { submitForm } from "@/lib/submitForm";
 
 const OfferPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
