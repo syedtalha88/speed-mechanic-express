@@ -3,6 +3,7 @@ import { Wrench, Clock, Truck, ArrowRight, Cog, Shield } from "lucide-react";
 import { toast } from "sonner";
 import heroBg from "@/assets/hero-bg.jpg";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
+import { submitForm } from "@/lib/submitForm";
 
 const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
 
