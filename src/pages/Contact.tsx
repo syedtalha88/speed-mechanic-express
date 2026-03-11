@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Phone, Mail, MapPin, Clock, Send, Cog, Wrench, MessageCircle } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 import { toast } from "sonner";
+import { submitForm } from "@/lib/submitForm";
 
 const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
 
