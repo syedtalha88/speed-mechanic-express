@@ -2,12 +2,12 @@ import { Clock, Truck, IndianRupee, Wrench, ShieldCheck, Zap, FileCheck } from "
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const points = [
-  { icon: Clock, title: "30-Minute Response", desc: "No waiting for days. Our mechanic is at your doorstep in 30 minutes flat. Guaranteed or your next service is free.", num: "01" },
+  { icon: Clock, title: "Quick Response Time", desc: "No waiting for days. Book online and our mechanic reaches your location promptly — saving you time and effort.", num: "01" },
   { icon: Truck, title: "Free Pickup & Drop", desc: "We pick up your bike, service it with genuine parts, and bring it back. You don't move an inch.", num: "02" },
-  { icon: Zap, title: "We Save Your Time", desc: "No riding to workshops. No queues. No chasing mechanics. We come to you — doorstep bike service that respects your time.", num: "03" },
-  { icon: FileCheck, title: "Service Assurance Card", desc: "Every service comes with a detailed Service Assurance Card — mechanic name, photo, parts used, work done, and warranty info. Complete transparency for your peace of mind.", num: "04" },
+  { icon: Zap, title: "We Save Your Time", desc: "No riding to workshops. No queues. No chasing mechanics. XpMechanics comes to you — service that respects your schedule.", num: "03" },
+  { icon: FileCheck, title: "Service Assurance Card", desc: "Every service comes with a detailed assurance card — mechanic name, photo, parts used, work done, and warranty info. Complete transparency.", num: "04" },
   { icon: IndianRupee, title: "Upfront Pricing", desc: "Know exactly what you'll pay before we start. No hidden charges, no surprise extras.", num: "05" },
-  { icon: ShieldCheck, title: "6-Month Warranty", desc: "Every service comes with a 6-month warranty on parts and labour. That's our confidence.", num: "06" },
+  { icon: ShieldCheck, title: "6-Month Warranty", desc: "Every service comes with a warranty on parts and labour. That's the XpMechanics confidence.", num: "06" },
   { icon: Wrench, title: "Expert-Only Team", desc: "Only the top 5% of applicants make it through our mechanic selection and certification process.", num: "07" },
 ];
 
@@ -26,7 +26,7 @@ const WhyDifferent = () => (
             Why Riders <span className="text-primary">Choose Us</span> Over Workshops
           </h2>
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto text-sm md:text-base">
-            We re-engineered the entire bike service experience in Hyderabad. Here's why 12,000+ riders trust us.
+            XpMechanics re-engineered the bike service experience. Here's why 12,000+ riders trust us.
           </p>
         </div>
       </ScrollReveal>
@@ -49,7 +49,6 @@ const WhyDifferent = () => (
                 <p className="text-xs md:text-sm text-primary-foreground/80 leading-relaxed">{desc}</p>
               </div>
             ) : idx === 3 ? (
-              /* Service Assurance Card - special highlight */
               <div className="group glass-frosted p-6 md:p-8 hover-glass-glow transition-all duration-500 relative overflow-hidden h-full border border-primary/30">
                 <div className="absolute top-4 right-4 font-heading text-5xl md:text-6xl font-black text-primary/10">{num}</div>
                 <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
@@ -57,7 +56,7 @@ const WhyDifferent = () => (
                 <h3 className="font-heading text-lg md:text-xl font-bold uppercase mb-2 md:mb-3">{title}</h3>
                 <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{desc}</p>
                 <div className="mt-3 flex items-center gap-2 text-[10px] md:text-xs text-primary font-bold uppercase tracking-wider">
-                  <ShieldCheck className="h-3.5 w-3.5" /> Extra Assurity Guaranteed
+                  <ShieldCheck className="h-3.5 w-3.5" /> Full Transparency Guaranteed
                 </div>
               </div>
             ) : (

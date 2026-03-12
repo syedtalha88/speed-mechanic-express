@@ -12,13 +12,13 @@ const plans = [
   },
   {
     name: "Pro Service", price: "₹999",
-    desc: "Complete bike care for peak performance. Mechanic at your doorstep in 30 min.",
+    desc: "Complete bike care by XpMechanics for peak performance.",
     popular: true,
     features: ["Everything in Basic", "Full Oil Change (Branded)", "Spark Plug Replacement", "Throttle Cable Adjustment", "Battery Health Check", "6-Month Warranty", "Service Assurance Card"],
   },
   {
     name: "Premium Overhaul", price: "₹2,499",
-    desc: "For bikes that deserve the best doorstep service in Hyderabad.",
+    desc: "For bikes that deserve the best — full overhaul by certified experts.",
     popular: false,
     features: ["Everything in Pro", "Engine Flush & Clean", "Carburetor Tuning", "Full Brake Overhaul", "Electrical Diagnostics", "12-Month Warranty", "Service Assurance Card"],
   },
@@ -30,13 +30,13 @@ const PricingSection = () => (
       <ScrollReveal variant="mechanical-slide">
         <div className="text-center mb-10 md:mb-14">
           <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
-            <Wrench className="h-4 w-4" /> Transparent Pricing
+            <Wrench className="h-4 w-4" /> XpMechanics Pricing
           </span>
           <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
             No Hidden <span className="text-primary">Charges</span>. Ever.
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            What you see is what you pay. Upfront pricing for doorstep bike service in Hyderabad.
+            What you see is what you pay. Upfront, honest pricing for every service.
           </p>
         </div>
       </ScrollReveal>

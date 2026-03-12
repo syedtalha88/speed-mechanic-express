@@ -2,13 +2,13 @@ import { Shield, Award, ThumbsUp, Clock, Users, Wrench, FileCheck } from "lucide
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const trustItems = [
-  { icon: Shield, title: "100% Genuine Parts", desc: "We only use OEM & branded spare parts for every bike service. No cheap alternatives, ever.", stat: "100%", statLabel: "Genuine" },
+  { icon: Shield, title: "100% Genuine Parts", desc: "XpMechanics only uses OEM & branded spare parts. No cheap alternatives, ever.", stat: "100%", statLabel: "Genuine" },
   { icon: Award, title: "Certified Mechanics", desc: "Every mechanic is trained, background-verified, and certified by industry experts.", stat: "Top 5%", statLabel: "Selected" },
   { icon: ThumbsUp, title: "Satisfaction Guaranteed", desc: "Not happy with the service? We redo it at zero extra cost. No questions asked.", stat: "99.2%", statLabel: "Satisfied" },
-  { icon: FileCheck, title: "Service Assurance Card", desc: "Every service includes a detailed assurance card with mechanic name, photo, parts list, work summary & warranty details — so you know exactly what was done and by whom.", stat: "100%", statLabel: "Transparent" },
-  { icon: Clock, title: "On-Time, Every Time", desc: "We guarantee 30-minute arrival at your doorstep or your next bike service is free.", stat: "30", statLabel: "Minutes" },
-  { icon: Users, title: "12,000+ Happy Riders", desc: "Trusted by thousands of riders across Hyderabad for doorstep bike service.", stat: "12K+", statLabel: "Riders" },
-  { icon: Wrench, title: "Transparent Pricing", desc: "No hidden charges on any service. You pay exactly what's quoted — upfront and honest.", stat: "₹0", statLabel: "Hidden Fees" },
+  { icon: FileCheck, title: "Service Assurance Card", desc: "Every service includes a detailed card with mechanic name, parts list, work summary & warranty details.", stat: "100%", statLabel: "Transparent" },
+  { icon: Clock, title: "Quick Response Time", desc: "Book online and our mechanic reaches your location promptly — no long waits, no workshop queues.", stat: "Fast", statLabel: "Response" },
+  { icon: Users, title: "12,000+ Happy Riders", desc: "Thousands of riders across Hyderabad trust XpMechanics for reliable bike care.", stat: "12K+", statLabel: "Riders" },
+  { icon: Wrench, title: "Transparent Pricing", desc: "No hidden charges. You pay exactly what's quoted — upfront and honest.", stat: "₹0", statLabel: "Hidden Fees" },
 ];
 
 const TrustSection = () => (
@@ -19,13 +19,13 @@ const TrustSection = () => (
       <ScrollReveal variant="mechanical-slide">
         <div className="text-center mb-10 md:mb-16">
           <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
-            <Shield className="h-4 w-4" /> Why Trust Us
+            <Shield className="h-4 w-4" /> Why Trust XpMechanics
           </span>
           <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
             Built on <span className="text-primary">Trust</span> & Precision
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            We don't just fix bikes. We build lasting relationships with riders who demand the best doorstep bike service in Hyderabad.
+            We don't just fix bikes — we build lasting relationships with riders who demand quality and transparency.
           </p>
         </div>
       </ScrollReveal>
