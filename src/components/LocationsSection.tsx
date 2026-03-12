@@ -1,6 +1,5 @@
 import { MapPin } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
-import hyderabadMap from "@/assets/hyderabad-map.jpg";
 
 const locations = [
   "Madhapur", "Gachibowli", "Kukatpally", "Ameerpet",
@@ -14,13 +13,13 @@ const LocationsSection = () => (
       <ScrollReveal variant="mechanical-slide">
         <div className="text-center mb-10 md:mb-14">
           <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
-            <MapPin className="h-4 w-4" /> XpMechanics Coverage
+            <MapPin className="h-4 w-4" /> Where We Serve
           </span>
           <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
-            We Serve Across <span className="text-primary">Hyderabad</span>
+            Doorstep <span className="text-primary">Bike Service</span> Across Hyderabad
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            XpMechanics covers 50+ areas across the city. Our certified mechanic reaches your location quickly — so you never have to visit a workshop.
+            We cover 50+ areas across Hyderabad. Our certified mechanic reaches your location within 30 minutes — guaranteed.
           </p>
         </div>
       </ScrollReveal>
@@ -30,8 +29,8 @@ const LocationsSection = () => (
           <div className="relative group">
             <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%)' }}>
               <img
-                src={hyderabadMap}
-                alt="XpMechanics service coverage map showing locations across Hyderabad"
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80"
+                alt="Map showing XpMechanics bike service coverage areas across Hyderabad"
                 className="w-full h-60 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
@@ -42,6 +41,9 @@ const LocationsSection = () => (
                 </p>
               </div>
             </div>
+            <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-pulse-glow" />
+            <div className="absolute top-1/2 left-2/3 w-3 h-3 bg-primary rounded-full animate-pulse-glow delay-300" />
+            <div className="absolute top-2/3 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse-glow delay-500" />
           </div>
         </ScrollReveal>
 
@@ -59,7 +61,7 @@ const LocationsSection = () => (
 
       <ScrollReveal variant="fade-up" delay={600}>
         <p className="text-center text-xs md:text-sm text-muted-foreground mt-6 md:mt-8">
-          Don't see your area? <a href="https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact XpMechanics</a> — we probably cover it too.
+          Don't see your area? <a href="https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact us</a> — we probably cover it for doorstep bike service too.
         </p>
       </ScrollReveal>
     </div>

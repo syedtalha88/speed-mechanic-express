@@ -2,10 +2,10 @@ import { Phone, Wrench, Truck, CheckCircle, Cog, FileCheck } from "lucide-react"
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
-  { icon: Phone, num: "01", title: "Book Online", desc: "Fill the form or call XpMechanics. Takes just 30 seconds to get started." },
-  { icon: Wrench, num: "02", title: "Mechanic Arrives", desc: "Our certified expert reaches your doorstep at the scheduled time." },
+  { icon: Phone, num: "01", title: "Book Online", desc: "Fill the form or call us. Takes just 30 seconds to get started." },
+  { icon: Wrench, num: "02", title: "Mechanic Arrives", desc: "Our certified expert reaches your doorstep within 30 minutes." },
   { icon: Truck, num: "03", title: "Free Pickup", desc: "We pick up your bike, service it with genuine parts, and drop it back." },
-  { icon: FileCheck, num: "04", title: "Service Assurance Card", desc: "Receive a detailed card with mechanic info, parts used, work done & warranty — full transparency." },
+  { icon: FileCheck, num: "04", title: "Service Assurance Card", desc: "Receive a detailed card with mechanic info, parts used, work done & warranty — for total transparency." },
   { icon: CheckCircle, num: "05", title: "Done & Dusted", desc: "Ride your perfectly serviced bike. Zero hassle, total satisfaction." },
 ];
 
@@ -19,18 +19,19 @@ const HowItWorks = () => (
       <ScrollReveal variant="mechanical-slide">
         <div className="text-center mb-12 md:mb-16">
           <span className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-primary mb-3">
-            <Wrench className="h-4 w-4" /> How XpMechanics Works
+            <Wrench className="h-4 w-4" /> Simple Process
           </span>
           <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-black uppercase">
-            Five Simple <span className="text-primary">Steps</span> to a Better Ride
+            How Doorstep <span className="text-primary">Bike Service</span> Works
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            Getting your bike serviced has never been easier. Book, sit back, and let XpMechanics handle the rest.
+            Getting your bike serviced in Hyderabad has never been easier. Five steps. That's it.
           </p>
         </div>
       </ScrollReveal>
 
       <div className="relative max-w-4xl mx-auto">
+        {/* Central connector line - desktop only */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-primary" />
 
         {steps.map(({ icon: Icon, num, title, desc }, idx) => (
@@ -38,6 +39,7 @@ const HowItWorks = () => (
             <div className={`relative flex items-center gap-4 md:gap-8 mb-10 md:mb-16 last:mb-0 ${
               idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } flex-col md:flex-row`}>
+              {/* Content card */}
               <div className={`flex-1 w-full ${idx % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
                 <div className="group glass-card p-5 md:p-6 hover-glass-glow transition-all duration-500 relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
@@ -49,6 +51,7 @@ const HowItWorks = () => (
                 </div>
               </div>
 
+              {/* Center node */}
               <div className="relative z-10 w-12 h-12 md:w-14 md:h-14 shrink-0 bg-primary flex items-center justify-center border-4 border-background shadow-lg group cursor-pointer transition-transform duration-300 hover:scale-110">
                 <span className="font-heading text-xs md:text-sm font-black text-primary-foreground">{num}</span>
                 <div className="absolute inset-0 border-2 border-primary animate-ping opacity-20" />
