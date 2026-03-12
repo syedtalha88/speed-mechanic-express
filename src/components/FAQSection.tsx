@@ -8,14 +8,14 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "How fast can a mechanic reach my location in Hyderabad?", a: "Our average response time is 30 minutes across all major areas in Hyderabad. We guarantee it — or your next doorstep bike service is free." },
-  { q: "Is the pickup and drop service really free?", a: "Yes, 100% free. We pick up your bike from your location, service it, and drop it back — at zero extra cost. Free pickup and drop is included with every service." },
-  { q: "What bike brands do you service at doorstep?", a: "We service all major brands at your doorstep — Honda, Yamaha, Royal Enfield, Bajaj, TVS, KTM, Suzuki, Hero, and more. Two-wheelers only." },
-  { q: "Do you use genuine spare parts?", a: "Absolutely. We only use OEM and branded spare parts for every bike service. No local alternatives. Every part comes with a warranty." },
-  { q: "What if I'm not satisfied with the bike service?", a: "We offer a 100% satisfaction guarantee. If you're not happy, we'll redo the service at no extra cost. No questions asked." },
-  { q: "How do I pay for the doorstep bike service?", a: "We accept cash, UPI (GPay, PhonePe, Paytm), debit/credit cards, and net banking. You pay only after the service is complete and you're satisfied." },
-  { q: "Do you offer any warranty on bike service?", a: "Yes. Our Basic Service comes with a 3-month warranty, Pro Service with 6 months, and Premium Overhaul with 12 months on parts and labour." },
-  { q: "Which areas in Hyderabad do you cover for doorstep bike service?", a: "We cover 50+ areas including Madhapur, Gachibowli, Kukatpally, Ameerpet, Secunderabad, Banjara Hills, Jubilee Hills, Kondapur, Miyapur, and many more." },
+  { q: "How quickly can a XpMechanics mechanic reach me?", a: "Once you book, our team assigns the nearest available mechanic to your location. Response times vary by area, but we prioritize getting to you as fast as possible." },
+  { q: "Is the pickup and drop service really free?", a: "Yes, 100% free. XpMechanics picks up your bike, services it, and drops it back — at zero extra cost with every service." },
+  { q: "What bike brands does XpMechanics service?", a: "We service all major brands — Honda, Yamaha, Royal Enfield, Bajaj, TVS, KTM, Suzuki, Hero, and more. Two-wheelers only." },
+  { q: "Do you use genuine spare parts?", a: "Absolutely. XpMechanics only uses OEM and branded spare parts. No local alternatives. Every part comes with a warranty." },
+  { q: "What if I'm not satisfied with the service?", a: "We offer a 100% satisfaction guarantee. If you're not happy, we'll redo the service at no extra cost. No questions asked." },
+  { q: "How do I pay for the service?", a: "We accept cash, UPI (GPay, PhonePe, Paytm), debit/credit cards, and net banking. You pay only after the service is complete." },
+  { q: "Does XpMechanics offer any warranty?", a: "Yes. Basic Service comes with a 3-month warranty, Pro Service with 6 months, and Premium Overhaul with 12 months on parts and labour." },
+  { q: "Which areas in Hyderabad does XpMechanics cover?", a: "We cover 50+ areas including Madhapur, Gachibowli, Kukatpally, Ameerpet, Secunderabad, Banjara Hills, Jubilee Hills, Kondapur, Miyapur, and many more." },
 ];
 
 const FAQSection = () => (
@@ -30,7 +30,7 @@ const FAQSection = () => (
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            Everything you need to know about our doorstep bike service in Hyderabad.
+            Everything you need to know about XpMechanics and our services.
           </p>
         </div>
       </ScrollReveal>

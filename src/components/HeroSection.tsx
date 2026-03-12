@@ -23,7 +23,7 @@ const HeroSection = () => {
         { name: formData.name, phone: formData.phone, bike: formData.brand, service: formData.service, location: formData.location },
         "New Bike Service Lead"
       );
-      toast.success("Your request has been sent! We'll contact you within 5 minutes.");
+      toast.success("Your request has been sent! We'll contact you shortly.");
       setFormData({ name: "", phone: "", brand: "", service: "", location: "" });
     } catch {
       toast.error("Something went wrong. Please call us at 93477 32437.");
@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="Professional bike mechanic servicing motorcycle at doorstep in Hyderabad" className="w-full h-full object-cover" loading="eager" />
+        <img src={heroBg} alt="XpMechanics professional mechanic servicing a motorcycle" className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/40 md:to-foreground/30" />
       </div>
 
@@ -45,28 +45,28 @@ const HeroSection = () => {
           <ScrollReveal variant="fade-left" delay={100}>
             <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 md:px-5 md:py-2.5 mb-4 md:mb-6">
               <Wrench className="h-3.5 w-3.5 md:h-4 md:w-4 text-primary" />
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-primary">#1 Doorstep Bike Service in Hyderabad</span>
+              <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-primary">XpMechanics — Trusted by 12,000+ Riders</span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal variant="mechanical-slide" delay={200}>
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-4 md:mb-6">
-              Expert <span className="text-primary">Bike Service</span> at Your Doorstep in <span className="text-primary">Hyderabad</span>
+              Expert <span className="text-primary">Bike Service</span> at Your Doorstep
             </h1>
           </ScrollReveal>
 
           <ScrollReveal variant="fade-up" delay={300}>
             <p className="text-base md:text-xl text-background/80 mb-6 md:mb-8 max-w-xl leading-relaxed">
-              Skip the workshop. Our certified mechanic reaches you in <strong className="text-primary">30 minutes</strong>. Free pickup & drop. We save your time — guaranteed.
+              Skip the workshop hassle. XpMechanics sends a certified mechanic to your location with genuine parts and transparent pricing.
             </p>
           </ScrollReveal>
 
           {/* 3 Key Highlights */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-10">
             {[
-              { icon: Clock, text: "Mechanic in 30 Min" },
+              { icon: Clock, text: "Quick Response" },
               { icon: Truck, text: "Free Pickup & Drop" },
-              { icon: Shield, text: "Zero Hassle Service" },
+              { icon: Shield, text: "Warranty Included" },
             ].map(({ icon: Icon, text }, idx) => (
               <ScrollReveal key={text} variant="scale" delay={400 + idx * 100}>
                 <div className="group glass-primary flex items-center gap-3 px-4 py-3 md:px-5 md:py-3.5 cursor-pointer hover-glass-glow transition-all duration-300">
@@ -127,7 +127,7 @@ const HeroSection = () => {
                   <option>Battery Replacement</option><option>Brake Service</option>
                   <option>Full Engine Overhaul</option><option>Other</option>
                 </select>
-                <input type="text" placeholder="Your Location / Area in Hyderabad" value={formData.location} onChange={(e) => setFormData(p => ({ ...p, location: e.target.value }))} className="w-full px-5 py-3 md:py-3.5 bg-background/80 border border-border text-foreground font-body text-sm focus:outline-none focus:border-primary focus:bg-background transition-all duration-300 mechanical-input" />
+                <input type="text" placeholder="Your Location / Area" value={formData.location} onChange={(e) => setFormData(p => ({ ...p, location: e.target.value }))} className="w-full px-5 py-3 md:py-3.5 bg-background/80 border border-border text-foreground font-body text-sm focus:outline-none focus:border-primary focus:bg-background transition-all duration-300 mechanical-input" />
                 <button type="submit" disabled={submitting} className="group w-full mechanical-btn bg-primary text-primary-foreground font-heading font-bold uppercase text-sm md:text-base py-3.5 md:py-4 hover:bg-accent transition-all duration-300 shadow-lg relative overflow-hidden disabled:opacity-70">
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     {submitting ? "Sending..." : "Get Free Quote"}
@@ -135,7 +135,7 @@ const HeroSection = () => {
                   </span>
                 </button>
               </form>
-              <p className="text-[10px] md:text-xs text-muted-foreground mt-3 text-center">✓ No spam · ✓ Instant response · ✓ 100% free</p>
+              <p className="text-[10px] md:text-xs text-muted-foreground mt-3 text-center">✓ No spam · ✓ Quick response · ✓ 100% free</p>
             </div>
           </div>
         </ScrollReveal>
