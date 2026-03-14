@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/hooks/useScrollReveal";
 import { toast } from "sonner";
 import { submitForm } from "@/lib/submitForm";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
