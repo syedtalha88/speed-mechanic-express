@@ -42,7 +42,7 @@ const AboutPage = () => (
                   XpMechanics started with a simple frustration — why should bike owners waste hours at workshops for a simple oil change? We believed there had to be a better way.
                 </p>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4">
-                  Founded in Hyderabad with 10+ years of automotive experience, we built a doorstep bike service that brings the workshop to you. Our certified mechanics arrive in 30 minutes, service your bike with genuine parts, and leave you with a perfectly running machine.
+                  Founded in Hyderabad with 10+ years of automotive experience, we built a doorstep bike service that brings the workshop to you. Our certified mechanics , service your bike with genuine parts, and leave you with a perfectly running machine.
                 </p>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                   Today, we've serviced 25,000+ bikes and earned the trust of 12,000+ riders across 50+ areas in Hyderabad with free pickup and drop. And we're just getting started.
@@ -92,7 +92,7 @@ const AboutPage = () => (
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-5xl mx-auto">
             {[
-              { icon: Clock, title: "30-Min Response", desc: "Mechanic at your doorstep in 30 minutes. No delays, no excuses." },
+              { icon: Clock, title: "30-Min Response", desc: "Mechanic at your doorstep. No delays, no excuses." },
               { icon: Truck, title: "Free Pickup & Drop", desc: "We pick up your bike and bring it back — completely free." },
               { icon: FileCheck, title: "Service Assurance Card", desc: "Detailed card with mechanic info, parts used, work done & warranty for total transparency." },
               { icon: Shield, title: "Genuine Parts Only", desc: "OEM and branded spare parts with warranty. No shortcuts, ever." },

@@ -2,13 +2,13 @@ import { Clock, Truck, IndianRupee, Wrench, ShieldCheck, Zap, FileCheck } from "
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const points = [
-  { icon: Clock, title: "30-Minute Response", desc: "No waiting for days. Our mechanic is at your doorstep in 30 minutes flat. Guaranteed or your next service is free.", num: "01" },
+  { icon: Clock, title: " Quick Response", desc: "No waiting for days. Our mechanic is at your doorstep in 30 minutes flat. Guaranteed or your next service is free.", num: "01" },
   { icon: Truck, title: "Free Pickup & Drop", desc: "We pick up your bike, service it with genuine parts, and bring it back. You don't move an inch.", num: "02" },
   { icon: Zap, title: "We Save Your Time", desc: "No riding to workshops. No queues. No chasing mechanics. We come to you — doorstep bike service that respects your time.", num: "03" },
   { icon: FileCheck, title: "Service Assurance Card", desc: "Every service comes with a detailed Service Assurance Card — mechanic name, photo, parts used, work done, and warranty info. Complete transparency for your peace of mind.", num: "04" },
   { icon: IndianRupee, title: "Upfront Pricing", desc: "Know exactly what you'll pay before we start. No hidden charges, no surprise extras.", num: "05" },
-  { icon: ShieldCheck, title: "6-Month Warranty", desc: "Every service comes with a 6-month warranty on parts and labour. That's our confidence.", num: "06" },
-  { icon: Wrench, title: "Expert-Only Team", desc: "Only the top 5% of applicants make it through our mechanic selection and certification process.", num: "07" },
+  // { icon: ShieldCheck, title: "6-Month Warranty", desc: "Every service comes with a 6-month warranty on parts and labour. That's our confidence.", num: "06" },
+  { icon: Wrench, title: "Experience Team", desc: "Only the top 5% of applicants make it through our mechanic selection and certification process.", num: "07" },
 ];
 
 const WhyDifferent = () => (

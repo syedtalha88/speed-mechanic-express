@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
+import Locationimg from  "../assets/locationimage.png"
 
 const locations = [
   "Madhapur", "Gachibowli", "Kukatpally", "Ameerpet",
@@ -19,7 +20,7 @@ const LocationsSection = () => (
             Doorstep <span className="text-primary">Bike Service</span> Across Hyderabad
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            We cover 50+ areas across Hyderabad. Our certified mechanic reaches your location within 30 minutes — guaranteed.
+            We cover 50+ areas across Hyderabad. Our certified mechanic reaches your location 
           </p>
         </div>
       </ScrollReveal>
@@ -29,7 +30,7 @@ const LocationsSection = () => (
           <div className="relative group">
             <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%)' }}>
               <img
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80"
+                src="{Locationimg}"
                 alt="Map showing XpMechanics bike service coverage areas across Hyderabad"
                 className="w-full h-60 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
