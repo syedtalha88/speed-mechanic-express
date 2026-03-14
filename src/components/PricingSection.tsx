@@ -12,7 +12,7 @@ const plans = [
   },
   {
     name: "Pro Service", price: "₹999",
-    desc: "Complete bike care for peak performance. Mechanic at your doorstep in 30 min.",
+    desc: "Complete bike care for peak performance. Mechanic at your doorstep, same day.",
     popular: true,
     features: ["Everything in Basic", "Full Oil Change (Branded)", "Spark Plug Replacement", "Throttle Cable Adjustment", "Battery Health Check", "6-Month Warranty", "Service Assurance Card"],
   },
