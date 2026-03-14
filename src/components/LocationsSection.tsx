@@ -30,7 +30,7 @@ const LocationsSection = () => (
           <div className="relative group">
             <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%)' }}>
               <img
-                src="{Locationimg}"
+                src={Locationimg}
                 alt="Map showing XpMechanics bike service coverage areas across Hyderabad"
                 className="w-full h-60 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
