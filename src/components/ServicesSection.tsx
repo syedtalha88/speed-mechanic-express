@@ -2,12 +2,12 @@ import { Wrench, Droplets, Battery, Disc3, Settings, Gauge, ArrowRight, Cog } fr
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
 
 const services = [
   { icon: Wrench, title: "General Service", desc: "Complete 40-point inspection, cleaning, and tuning — at your doorstep. No workshop visit needed.", price: "₹499" },
   { icon: Droplets, title: "Oil Change", desc: "Premium engine oil replacement with filter cleaning. Free pickup and drop across Hyderabad.", price: "₹299" },
-  { icon: Battery, title: "Battery Service", desc: "Battery testing, charging, and replacement. Mechanic at your location within 30 minutes.", price: "₹199" },
+  { icon: Battery, title: "Battery Service", desc: "Battery testing, charging, and replacement. Mechanic arrives at your scheduled time.", price: "₹199" },
   { icon: Disc3, title: "Brake Service", desc: "Brake pad replacement, disc cleaning, and hydraulic fluid top-up with genuine parts only.", price: "₹349" },
   { icon: Settings, title: "Engine Overhaul", desc: "Full engine strip-down, cleaning, and rebuild. We save your time with doorstep service.", price: "₹2,999" },
   { icon: Gauge, title: "Performance Tuning", desc: "Carburetor tuning, chain adjustment, and optimization. Expert bike service in Hyderabad.", price: "₹599" },

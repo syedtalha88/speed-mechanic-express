@@ -13,7 +13,7 @@ export async function submitForm(data: Record<string, string>, formName: string)
       autoresponse_from: "XpMechanics",
       autoresponse_sender: "xpmechanics@gmail.com",
       autoresponse_subject: "Thanks for contacting XpMechanics! 🔧",
-      autoresponse_message: `Hi ${data.name || "there"},\n\nThank you for reaching out to XpMechanics! We've received your ${formName.toLowerCase()} and our team will get back to you within 30 minutes.\n\nIn the meantime, feel free to WhatsApp us at +91-93477-32437 for instant support.\n\nYour Details:\n${Object.entries(data).filter(([,v]) => v).map(([k,v]) => `• ${k}: ${v}`).join("\n")}\n\nRide Safe,\nTeam XpMechanics 🏍️`,
+      autoresponse_message: `Hi ${data.name || "there"},\n\nThank you for reaching out to XpMechanics! We've received your ${formName.toLowerCase()} and our team will get back to you shortly.\n\nIn the meantime, feel free to WhatsApp us at +91 70953 38092 for instant support.\n\nYour Details:\n${Object.entries(data).filter(([,v]) => v).map(([k,v]) => `• ${k}: ${v}`).join("\n")}\n\nRide Safe,\nTeam XpMechanics 🏍️`,
       ...data,
     }),
   });

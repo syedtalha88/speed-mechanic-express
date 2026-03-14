@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
   { icon: Phone, num: "01", title: "Book Online", desc: "Fill the form or call us. Takes just 30 seconds to get started." },
-  { icon: Wrench, num: "02", title: "Mechanic Arrives", desc: "Our certified expert reaches your doorstep within 30 minutes." },
+  { icon: Wrench, num: "02", title: "Mechanic Arrives", desc: "Our certified expert reaches your doorstep at the scheduled time." },
   { icon: Truck, num: "03", title: "Free Pickup", desc: "We pick up your bike, service it with genuine parts, and drop it back." },
   { icon: FileCheck, num: "04", title: "Service Assurance Card", desc: "Receive a detailed card with mechanic info, parts used, work done & warranty — for total transparency." },
   { icon: CheckCircle, num: "05", title: "Done & Dusted", desc: "Ride your perfectly serviced bike. Zero hassle, total satisfaction." },

@@ -92,7 +92,7 @@ const AboutPage = () => (
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-5xl mx-auto">
             {[
-              { icon: Clock, title: "30-Min Response", desc: "Mechanic at your doorstep. No delays, no excuses." },
+              { icon: Clock, title: "Quick Response", desc: "Same-day service at your doorstep. No delays, no excuses." },
               { icon: Truck, title: "Free Pickup & Drop", desc: "We pick up your bike and bring it back — completely free." },
               { icon: FileCheck, title: "Service Assurance Card", desc: "Detailed card with mechanic info, parts used, work done & warranty for total transparency." },
               { icon: Shield, title: "Genuine Parts Only", desc: "OEM and branded spare parts with warranty. No shortcuts, ever." },

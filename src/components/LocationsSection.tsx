@@ -62,7 +62,7 @@ const LocationsSection = () => (
 
       <ScrollReveal variant="fade-up" delay={600}>
         <p className="text-center text-xs md:text-sm text-muted-foreground mt-6 md:mt-8">
-          Don't see your area? <a href="https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact us</a> — we probably cover it for doorstep bike service too.
+          Don't see your area? <a href="https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact us</a> — we probably cover it for doorstep bike service too.
         </p>
       </ScrollReveal>
     </div>

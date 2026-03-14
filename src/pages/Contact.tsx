@@ -70,7 +70,7 @@ const ContactPage = () => {
                 </ScrollReveal>
                 <div className="space-y-4">
                   {[
-                    { icon: Phone, label: "Phone", value: "+91-93477-32437", href: "tel:+919347732437" },
+                    { icon: Phone, label: "Phone", value: "+91 70953 38092", href: "tel:+917095338092" },
                     { icon: Mail, label: "Email", value: "xpmechanics@gmail.com", href: "mailto:xpmechanics@gmail.com" },
                     { icon: MapPin, label: "Location", value: "Hyderabad, Telangana, India" },
                     { icon: Clock, label: "Working Hours", value: "Mon-Sat: 7 AM - 9 PM | Sun: 8 AM - 6 PM" },

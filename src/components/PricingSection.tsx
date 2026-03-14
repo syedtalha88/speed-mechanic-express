@@ -1,7 +1,7 @@
 import { Check, Wrench, Star, Cog } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
 
 const plans = [
   {

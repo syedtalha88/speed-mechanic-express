@@ -48,8 +48,8 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-xs md:text-sm font-bold uppercase tracking-wider mb-3 md:mb-4 text-primary">Contact</h4>
           <div className="space-y-3 text-xs md:text-sm text-muted-foreground">
-            <a href="tel:+919347732437" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="h-4 w-4 text-primary" /> +91-93477-32437
+            <a href="tel:+917095338092" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 text-primary" /> +91 70953 38092
             </a>
             <a href="mailto:xpmechanics@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="h-4 w-4 text-primary" /> xpmechanics@gmail.com
