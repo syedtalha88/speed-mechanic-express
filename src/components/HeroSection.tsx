@@ -57,7 +57,7 @@ const HeroSection = () => {
 
           <ScrollReveal variant="fade-up" delay={300}>
             <p className="text-base md:text-xl text-background/80 mb-6 md:mb-8 max-w-xl leading-relaxed">
-              Skip the workshop. Our certified mechanic reaches you in <strong className="text-primary">30 minutes</strong>. Free pickup & drop. We save your time — guaranteed.
+              Skip the workshop. Our certified mechanic reaches you <strong className="text-primary">at your doorstep</strong>. Free pickup & drop. We save your time — guaranteed.
             </p>
           </ScrollReveal>
 
