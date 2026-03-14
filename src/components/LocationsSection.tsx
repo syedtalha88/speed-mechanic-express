@@ -20,33 +20,19 @@ const LocationsSection = () => (
             Doorstep <span className="text-primary">Bike Service</span> Across Hyderabad
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            We cover 50+ areas across Hyderabad. Our certified mechanic reaches your location 
+            We cover 50+ areas across Hyderabad. Our certified mechanic reaches your location on schedule.
           </p>
         </div>
       </ScrollReveal>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
-        <ScrollReveal variant="clip-reveal" delay={100}>
-          <div className="relative group">
-            <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%)' }}>
-              <img
-                src={Locationimg}
-                alt="Map showing XpMechanics bike service coverage areas across Hyderabad"
-                className="w-full h-60 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-              <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 glass-dark px-4 md:px-5 py-2.5 md:py-3">
-                <p className="text-primary-foreground font-heading text-xs md:text-sm font-bold uppercase">
-                  <MapPin className="h-3.5 w-3.5 md:h-4 md:w-4 inline text-primary mr-1" /> 50+ Areas Covered
-                </p>
-              </div>
-            </div>
-            <div className="absolute top-1/4 left-1/3 w-3 h-3 bg-primary rounded-full animate-pulse-glow" />
-            <div className="absolute top-1/2 left-2/3 w-3 h-3 bg-primary rounded-full animate-pulse-glow delay-300" />
-            <div className="absolute top-2/3 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse-glow delay-500" />
-          </div>
-        </ScrollReveal>
+        <div className="w-full overflow-hidden rounded-lg">
+          <img
+            src={Locationimg}
+            alt="XpMechanics bike service coverage areas across Hyderabad"
+            className="w-full h-auto object-cover"
+          />
+        </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
           {locations.map((loc, idx) => (
