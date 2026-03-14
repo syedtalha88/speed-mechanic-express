@@ -4,7 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Wrench, Target, Eye, Users, Award, Shield, Clock, Truck, FileCheck, Cog } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20know%20more%20about%20your%20services";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20know%20more%20about%20your%20services";
 
 const AboutPage = () => (
   <>
@@ -92,7 +92,7 @@ const AboutPage = () => (
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-5xl mx-auto">
             {[
-              { icon: Clock, title: "30-Min Response", desc: "Mechanic at your doorstep. No delays, no excuses." },
+              { icon: Clock, title: "Quick Response", desc: "Same-day service at your doorstep. No delays, no excuses." },
               { icon: Truck, title: "Free Pickup & Drop", desc: "We pick up your bike and bring it back — completely free." },
               { icon: FileCheck, title: "Service Assurance Card", desc: "Detailed card with mechanic info, parts used, work done & warranty for total transparency." },
               { icon: Shield, title: "Genuine Parts Only", desc: "OEM and branded spare parts with warranty. No shortcuts, ever." },

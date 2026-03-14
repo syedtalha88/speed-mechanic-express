@@ -4,7 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Wrench, Droplets, Battery, Disc3, Settings, Gauge, Cog, Zap, ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
 
 const allServices = [
   { icon: Wrench, title: "General Bike Service", price: "₹499", desc: "Complete 40-point inspection, cleaning, lubrication, and tuning for all bike brands. Includes chain adjustment, cable lubrication, and minor fixes.", time: "2-3 hours" },

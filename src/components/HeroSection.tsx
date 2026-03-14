@@ -5,7 +5,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 import { submitForm } from "@/lib/submitForm";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
 
 const HeroSection = () => {
   const [formData, setFormData] = useState({ name: "", phone: "", brand: "", service: "", location: "" });
@@ -57,7 +57,7 @@ const HeroSection = () => {
 
           <ScrollReveal variant="fade-up" delay={300}>
             <p className="text-base md:text-xl text-background/80 mb-6 md:mb-8 max-w-xl leading-relaxed">
-              Skip the workshop. Our certified mechanic reaches you in <strong className="text-primary">30 minutes</strong>. Free pickup & drop. We save your time — guaranteed.
+              Skip the workshop. Our certified mechanic reaches you <strong className="text-primary">at your doorstep</strong>. Free pickup & drop. We save your time — guaranteed.
             </p>
           </ScrollReveal>
 

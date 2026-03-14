@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/hooks/useScrollReveal";
 import { toast } from "sonner";
 import { submitForm } from "@/lib/submitForm";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20have%20a%20question";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -28,7 +28,7 @@ const ContactPage = () => {
       toast.success("Message sent! We'll get back to you shortly.");
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch {
-      toast.error("Something went wrong. Please call us at 93477 32437.");
+      toast.error("Something went wrong. Please call us at 70953 38092.");
     } finally {
       setSubmitting(false);
     }
@@ -70,7 +70,7 @@ const ContactPage = () => {
                 </ScrollReveal>
                 <div className="space-y-4">
                   {[
-                    { icon: Phone, label: "Phone", value: "+91-93477-32437", href: "tel:+919347732437" },
+                    { icon: Phone, label: "Phone", value: "+91 70953 38092", href: "tel:+917095338092" },
                     { icon: Mail, label: "Email", value: "xpmechanics@gmail.com", href: "mailto:xpmechanics@gmail.com" },
                     { icon: MapPin, label: "Location", value: "Hyderabad, Telangana, India" },
                     { icon: Clock, label: "Working Hours", value: "Mon-Sat: 7 AM - 9 PM | Sun: 8 AM - 6 PM" },

@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
-import Locationimg from  "../assets/locationimage.png"
+import Locationimg from "../assets/hyderabad-coverage.jpg";
 
 const locations = [
   "Madhapur", "Gachibowli", "Kukatpally", "Ameerpet",
@@ -30,7 +30,7 @@ const LocationsSection = () => (
           <div className="relative group">
             <div className="relative overflow-hidden" style={{ clipPath: 'polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%)' }}>
               <img
-                src="{Locationimg}"
+                src={Locationimg}
                 alt="Map showing XpMechanics bike service coverage areas across Hyderabad"
                 className="w-full h-60 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -62,7 +62,7 @@ const LocationsSection = () => (
 
       <ScrollReveal variant="fade-up" delay={600}>
         <p className="text-center text-xs md:text-sm text-muted-foreground mt-6 md:mt-8">
-          Don't see your area? <a href="https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact us</a> — we probably cover it for doorstep bike service too.
+          Don't see your area? <a href="https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20check%20if%20you%20cover%20my%20area" target="_blank" rel="noopener noreferrer" className="text-primary font-bold cursor-pointer hover:underline">Contact us</a> — we probably cover it for doorstep bike service too.
         </p>
       </ScrollReveal>
     </div>

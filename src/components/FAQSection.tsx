@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "How fast can a mechanic reach my location in Hyderabad?", a: "Our average response time is 30 minutes across all major areas in Hyderabad. We guarantee it — or your next doorstep bike service is free." },
+  { q: "How fast can a mechanic reach my location in Hyderabad?", a: "We typically reach your doorstep the same day you book. Our team coordinates a convenient time slot so you never have to wait around." },
   { q: "Is the pickup and drop service really free?", a: "Yes, 100% free. We pick up your bike from your location, service it, and drop it back — at zero extra cost. Free pickup and drop is included with every service." },
   { q: "What bike brands do you service at doorstep?", a: "We service all major brands at your doorstep — Honda, Yamaha, Royal Enfield, Bajaj, TVS, KTM, Suzuki, Hero, and more. Two-wheelers only." },
   { q: "Do you use genuine spare parts?", a: "Absolutely. We only use OEM and branded spare parts for every bike service. No local alternatives. Every part comes with a warranty." },
