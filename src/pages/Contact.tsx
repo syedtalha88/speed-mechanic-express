@@ -28,7 +28,7 @@ const ContactPage = () => {
       toast.success("Message sent! We'll get back to you shortly.");
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch {
-      toast.error("Something went wrong. Please call us at 93477 32437.");
+      toast.error("Something went wrong. Please call us at 70953 38092.");
     } finally {
       setSubmitting(false);
     }
