@@ -64,7 +64,7 @@ const HeroSection = () => {
           {/* 3 Key Highlights */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-10">
             {[
-              { icon: Clock, text: "Mechanic in 30 Min" },
+              { icon: Clock, text: "Same-Day Service" },
               { icon: Truck, text: "Free Pickup & Drop" },
               { icon: Shield, text: "Zero Hassle Service" },
             ].map(({ icon: Icon, text }, idx) => (

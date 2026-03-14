@@ -6,7 +6,7 @@ const trustItems = [
   { icon: Award, title: "Certified Mechanics", desc: "Every mechanic is trained, background-verified, and certified by industry experts.", stat: "Top 5%", statLabel: "Selected" },
   { icon: ThumbsUp, title: "Satisfaction Guaranteed", desc: "Not happy with the service? We redo it at zero extra cost. No questions asked.", stat: "99.2%", statLabel: "Satisfied" },
   { icon: FileCheck, title: "Service Assurance Card", desc: "Every service includes a detailed assurance card with mechanic name, photo, and warranty details.", stat: "100%", statLabel: "Transparent" },
-  { icon: Clock, title: "On-Time, Every Time", desc: "We guarantee 30-minute arrival at your doorstep or your next bike service is free.", stat: "30", statLabel: "Minutes" },
+  { icon: Clock, title: "On-Time, Every Time", desc: "We arrive at your scheduled time — punctual, prepared, and ready to service your bike at your doorstep.", stat: "On", statLabel: "Schedule" },
   { icon: Users, title: "12,000+ Happy Riders", desc: "Trusted by thousands of riders across Hyderabad for doorstep bike service.", stat: "12K+", statLabel: "Riders" },
   { icon: Wrench, title: "Transparent Pricing", desc: "No hidden charges on any service. You pay exactly what's quoted — upfront and honest.", stat: "₹0", statLabel: "Hidden Fees" },
 ];
