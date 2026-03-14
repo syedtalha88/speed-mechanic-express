@@ -1,12 +1,14 @@
 import { Star } from "lucide-react";
 
-const ratings = [
-  { platform: "Google", rating: "4.8", reviews: "2,500+" },
-  { platform: "Justdial", rating: "4.7", reviews: "1,800+" },
-  { platform: "Sulekha", rating: "4.9", reviews: "900+" },
-  { platform: "Google", rating: "4.8", reviews: "2,500+" },
-  { platform: "Justdial", rating: "4.7", reviews: "1,800+" },
-  { platform: "Sulekha", rating: "4.9", reviews: "900+" },
+const highlights = [
+  "Genuine Parts Only",
+  "Certified Mechanics",
+  "Free Pickup & Drop",
+  "Same-Day Service",
+  "Transparent Pricing",
+  "12,000+ Happy Riders",
+  "Up to 6-Month Warranty",
+  "50+ Areas in Hyderabad",
 ];
 
 const RatingsMarquee = () => (
