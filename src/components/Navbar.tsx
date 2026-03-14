@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Wrench, Menu, X, Phone, Cog } from "lucide-react";
 
-const WA_LINK = "https://wa.me/919347732437?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
+const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
 
 const navLinks = [
   { label: "Home", to: "/" },
