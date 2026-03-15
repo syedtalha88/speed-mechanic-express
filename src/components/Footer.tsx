@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo_xp_mechanics.png";
+
 import { Wrench, Phone, Mail, MapPin } from "lucide-react";
 
 const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
@@ -9,11 +11,10 @@ const Footer = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
         <div>
           <Link to="/" className="flex items-center gap-2 mb-4">
-            <Wrench className="h-6 w-6 text-primary" />
-            <span className="font-heading text-xl font-black">XP<span className="text-primary">MECHANICS</span></span>
+            <img src={Logo} alt="" width={100}/>
           </Link>
           <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-            Hyderabad's most trusted doorstep bike service. Expert mechanics, genuine parts, zero hassle.
+            Hyderabad's most trusted doorstep bike service. Expert mechanics, same day service, zero hassle.
           </p>
         </div>
 

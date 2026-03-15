@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
-import Locationimg from "../assets/hyderabad-coverage.jpg";
+import Locationimg from "../assets/locationimage.png";
 
 const locations = [
   "Madhapur", "Gachibowli", "Kukatpally", "Ameerpet",

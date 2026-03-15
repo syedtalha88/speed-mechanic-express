@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Wrench, Menu, X, Phone, Cog } from "lucide-react";
-
+import Logo from "../assets/logo_xp_mechanics.png";
 const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20a%20bike%20service";
 
 const navLinks = [
@@ -18,10 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-sm">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2 group">
-          <Wrench className="h-7 w-7 text-primary transition-transform duration-300 group-hover:rotate-[-20deg]" />
-          <span className="font-heading text-xl font-black tracking-tight">
-            XP<span className="text-primary">MECHANICS</span>
-          </span>
+          <img src={Logo} alt="" width={100}/>
         </Link>
 
         {/* Desktop Nav */}
