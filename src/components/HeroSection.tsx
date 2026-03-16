@@ -119,7 +119,9 @@ const HeroSection = () => {
                   <option value="">Select Bike Brand</option>
                   <option>Honda</option><option>Yamaha</option><option>Royal Enfield</option>
                   <option>Bajaj</option><option>TVS</option><option>KTM</option>
-                  <option>Suzuki</option><option>Hero</option><option>Other</option>
+                  <option>Suzuki</option><option>Hero</option><option>Jawa</option>
+                  <option>Yezdi</option><option>BMW</option><option>Ducati</option> <option>Harley-Davidson</option>
+                  <option>Benelli</option><option>Kawasaki</option><option>Other</option>
                 </select>
                 <select value={formData.service} onChange={(e) => setFormData(p => ({ ...p, service: e.target.value }))} className="w-full px-5 py-3 md:py-3.5 bg-background/80 border border-border text-foreground font-body text-sm focus:outline-none focus:border-primary focus:bg-background transition-all duration-300 mechanical-input appearance-none">
                   <option value="">Select Service</option>

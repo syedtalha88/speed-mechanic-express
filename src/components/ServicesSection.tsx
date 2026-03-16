@@ -5,14 +5,43 @@ import { ScrollReveal } from "@/hooks/useScrollReveal";
 const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
 
 const services = [
-  { icon: Wrench, title: "General Service", desc: "Complete 40-point inspection, cleaning, and tuning — at your doorstep. No workshop visit needed.", price: "₹499" },
-  { icon: Droplets, title: "Oil Change", desc: "Premium engine oil replacement with filter cleaning. Free pickup and drop across Hyderabad.", price: "₹299" },
-  { icon: Battery, title: "Battery Service", desc: "Battery testing, charging, and replacement. Mechanic arrives at your scheduled time.", price: "₹199" },
-  { icon: Disc3, title: "Brake Service", desc: "Brake pad replacement, disc cleaning, and hydraulic fluid top-up with genuine parts only.", price: "₹349" },
-  { icon: Settings, title: "Engine Overhaul", desc: "Full engine strip-down, cleaning, and rebuild. We save your time with doorstep service.", price: "₹2,999" },
-  { icon: Gauge, title: "Performance Tuning", desc: "Carburetor tuning, chain adjustment, and optimization. Expert bike service in Hyderabad.", price: "₹599" },
+  { 
+    icon: Wrench, 
+    title: "General Service (For 100cc Below)", 
+    desc: "Complete 40-point inspection, cleaning, and tuning — at your doorstep. No workshop visit needed.", 
+    price: "₹499" 
+  },
+  { 
+    icon: Droplets, 
+    title: "Oil Change (For 100cc Below)", 
+    desc: "Premium engine oil replacement with filter cleaning.", 
+    price: "₹299" 
+  },
+  { 
+    icon: Battery, 
+    title: "Battery Service (For 100cc Below)", 
+    desc: "Battery testing, charging, and replacement. Mechanic arrives at your scheduled time.", 
+    price: "₹199" 
+  },
+  { 
+    icon: Disc3, 
+    title: "Brake Service (For 100cc Below)", 
+    desc: "Brake pad replacement, disc cleaning, and hydraulic fluid top-up with genuine parts only.", 
+    price: "₹349" 
+  },
+  { 
+    icon: Settings, 
+    title: "Engine Overhaul (For 100cc Below)", 
+    desc: "Full engine strip-down, cleaning, and rebuild. We save your time with doorstep service.", 
+    price: "₹2,999" 
+  },
+  { 
+    icon: Gauge, 
+    title: "Performance Tuning (For 100cc Below)", 
+    desc: "Carburetor tuning, chain adjustment, and optimization. Expert bike service in Hyderabad.", 
+    price: "₹599" 
+  },
 ];
-
 const ServicesSection = () => (
   <section id="services" className="section-padding bg-secondary">
     <div className="container mx-auto">
@@ -25,7 +54,7 @@ const ServicesSection = () => (
             Doorstep <span className="text-primary">Bike Service</span> in Hyderabad
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            From routine maintenance to major repairs — we handle everything at your doorstep with precision. Free pickup and drop included.
+            From routine maintenance to major repairs — we handle everything at your doorstep with precision. 
           </p>
         </div>
       </ScrollReveal>

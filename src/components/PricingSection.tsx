@@ -5,23 +5,22 @@ const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%
 
 const plans = [
   {
-    name: "Basic Service", price: "₹499",
+    name: "Basic Service (100cc – 150cc) ", price: "₹899",
     desc: "Essential maintenance for everyday riders. Includes free pickup and drop.",
     popular: false,
-    features: ["40-Point Inspection", "Oil Top-Up", "Chain Lubrication", "Brake Adjustment", "Air Filter Cleaning", "Free Pickup & Drop", "Service Assurance Card"],
+    features: ["Premium Full Service", "Engine oil replacement", "Oil filter cleaning / replacement", "Air filter service", "Chain cleaning & lubrication", "Brake pad inspection", "Throttle & clutch adjustment","Electrical system inspection", " Complete bike inspection"],
   },
   {
-    name: "Pro Service", price: "₹999",
+    name: "Pro Service (160CC - 200CC)", price: "₹1299",
     desc: "Complete bike care for peak performance. Mechanic at your doorstep, same day.",
-    popular: true,
-    features: ["Everything in Basic", "Full Oil Change (Branded)", "Spark Plug Replacement", "Throttle Cable Adjustment", "Battery Health Check", "6-Month Warranty", "Service Assurance Card"],
+    popular: true,   
+     features: ["Premium Full Service", "Engine oil replacement", "Oil filter cleaning / replacement", "Air filter service", "Chain cleaning & lubrication", "Brake pad inspection", "Throttle & clutch adjustment","Electrical system inspection", " Complete bike inspection"],
   },
   {
-    name: "Premium Overhaul", price: "₹2,499",
+    name: "Premium Overhaul (250CC - 390CC)", price: "₹2,499",
     desc: "For bikes that deserve the best doorstep service in Hyderabad.",
-    popular: false,
-    features: ["Everything in Pro", "Engine Flush & Clean", "Carburetor Tuning", "Full Brake Overhaul", "Electrical Diagnostics", "12-Month Warranty", "Service Assurance Card"],
-  },
+    popular: false,    features: ["Premium Full Service", "Engine oil replacement", "Oil filter cleaning / replacement", "Air filter service", "Chain cleaning & lubrication", "Brake pad inspection", "Throttle & clutch adjustment","Electrical system inspection", " Complete bike inspection"],
+ },
 ];
 
 const PricingSection = () => (
@@ -82,6 +81,22 @@ const PricingSection = () => (
             </div>
           </ScrollReveal>
         ))}
+      <div className="sm:col-span-2 md:col-span-3 mt-6">
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-3 border border-border rounded-lg px-6 py-4 bg-background/60 backdrop-blur text-center">
+    
+    <span className="text-sm md:text-base font-semibold">
+      For bikes <span className="text-primary font-bold">400CC and above</span>, pricing may vary.
+    </span>
+
+    <a
+      href="/contact"
+      className="font-heading text-sm font-bold uppercase bg-primary text-primary-foreground px-5 py-2 rounded-md hover:bg-accent transition"
+    >
+      Contact Us
+    </a>
+
+  </div>
+</div>
       </div>
     </div>
   </section>
