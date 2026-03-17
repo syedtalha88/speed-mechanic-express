@@ -20,12 +20,12 @@ const Index = () => (
     <main>
       <HeroSection />
       <RatingsMarquee />
-      <ServicesSection />
+      <PricingSection />
       <LocationsSection />
       <HowItWorks />
       <TrustSection />
       <WhyDifferent />
-      <PricingSection />
+      <ServicesSection />
       <TestimonialsSection />
       <StatsStrip />
       <FAQSection />

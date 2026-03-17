@@ -126,8 +126,11 @@ const HeroSection = () => {
                 <select value={formData.service} onChange={(e) => setFormData(p => ({ ...p, service: e.target.value }))} className="w-full px-5 py-3 md:py-3.5 bg-background/80 border border-border text-foreground font-body text-sm focus:outline-none focus:border-primary focus:bg-background transition-all duration-300 mechanical-input appearance-none">
                   <option value="">Select Service</option>
                   <option>General Service</option><option>Oil Change</option>
-                  <option>Battery Replacement</option><option>Brake Service</option>
-                  <option>Full Engine Overhaul</option><option>Other</option>
+                  <option>Engine Repair & Overhaul</option><option>Clutch & Gear Work</option>
+                  <option>Chain Sprocket Replacement</option><option>Electrical & Wiring Issues</option>
+                  <option>Battery Replacement</option><option>Brake Service (Disc / Drum)</option>
+                  <option>Oil Change & Tuning</option><option>Suspension Work</option>
+                  <option>Breakdown Assistanc</option><option>Other</option>
                 </select>
                 <input type="text" placeholder="Your Location / Area in Hyderabad" value={formData.location} onChange={(e) => setFormData(p => ({ ...p, location: e.target.value }))} className="w-full px-5 py-3 md:py-3.5 bg-background/80 border border-border text-foreground font-body text-sm focus:outline-none focus:border-primary focus:bg-background transition-all duration-300 mechanical-input" />
                 <button type="submit" disabled={submitting} className="group w-full mechanical-btn bg-primary text-primary-foreground font-heading font-bold uppercase text-sm md:text-base py-3.5 md:py-4 hover:bg-accent transition-all duration-300 shadow-lg relative overflow-hidden disabled:opacity-70">

@@ -12,24 +12,6 @@ const services = [
     price: "₹499" 
   },
   { 
-    icon: Droplets, 
-    title: "Oil Change (For 100cc Below)", 
-    desc: "Premium engine oil replacement with filter cleaning.", 
-    price: "₹299" 
-  },
-  { 
-    icon: Battery, 
-    title: "Battery Service (For 100cc Below)", 
-    desc: "Battery testing, charging, and replacement. Mechanic arrives at your scheduled time.", 
-    price: "₹199" 
-  },
-  { 
-    icon: Disc3, 
-    title: "Brake Service (For 100cc Below)", 
-    desc: "Brake pad replacement, disc cleaning, and hydraulic fluid top-up with genuine parts only.", 
-    price: "₹349" 
-  },
-  { 
     icon: Settings, 
     title: "Engine Overhaul (For 100cc Below)", 
     desc: "Full engine strip-down, cleaning, and rebuild. We save your time with doorstep service.", 
@@ -54,8 +36,7 @@ const ServicesSection = () => (
             Doorstep <span className="text-primary">Bike Service</span> in Hyderabad
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-xl mx-auto">
-            From routine maintenance to major repairs — we handle everything at your doorstep with precision. 
-          </p>
+        select any services with 299rs visiting charges + extra charges might apply for any extra work </p>
         </div>
       </ScrollReveal>
 
