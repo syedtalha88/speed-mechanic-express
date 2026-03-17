@@ -9,7 +9,7 @@ const services = [
     icon: Wrench, 
     title: "General Service (For 100cc Below)", 
     desc: "Complete 40-point inspection, cleaning, and tuning — at your doorstep. No workshop visit needed.", 
-    price: "₹499" 
+    price: "₹699" 
   },
   { 
     icon: Settings, 

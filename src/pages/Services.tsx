@@ -7,14 +7,14 @@ import { ScrollReveal } from "@/hooks/useScrollReveal";
 const WA_LINK = "https://wa.me/917095338092?text=Hi%20XpMechanics%2C%20I%20want%20to%20book%20";
 
 const allServices = [
-  { icon: Wrench, title: "General Bike Service", price: "₹499", desc: "Complete 40-point inspection, cleaning, lubrication, and tuning for all bike brands. Includes chain adjustment, cable lubrication, and minor fixes.", time: "2-3 hours" },
-  { icon: Droplets, title: "Oil Change", price: "₹299", desc: "Premium engine oil replacement with filter cleaning. We use branded oils — Motul, Castrol, Shell. Keeps your engine running smooth and cool.", time: "30-45 mins" },
-  { icon: Battery, title: "Battery Replacement", price: "₹199+", desc: "Battery testing, charging, and replacement. We stock all major brands — Exide, Amaron, SF Sonic. Installation included.", time: "20-30 mins" },
-  { icon: Disc3, title: "Brake Service", price: "₹349", desc: "Brake pad replacement, disc cleaning, drum adjustment, and hydraulic fluid top-up. Ensures maximum stopping power.", time: "1-2 hours" },
-  { icon: Settings, title: "Engine Overhaul", price: "₹2,999+", desc: "Full engine strip-down, cleaning, reboring, piston replacement, and rebuild with genuine parts. For bikes that need serious attention.", time: "1-2 days" },
-  { icon: Gauge, title: "Performance Tuning", price: "₹599", desc: "Carburetor tuning, chain sprocket adjustment, air filter replacement, and throttle response optimization for peak performance.", time: "1-2 hours" },
-  { icon: Cog, title: "Clutch Plate Service", price: "₹799+", desc: "Clutch plate inspection, adjustment, and replacement. Ensures smooth gear shifts and prevents clutch slipping.", time: "2-3 hours" },
-  { icon: Zap, title: "Electrical Diagnostics", price: "₹399", desc: "Complete electrical system check — wiring, headlights, indicators, horn, starter motor, and charging system diagnostics.", time: "1-2 hours" },
+  { icon: Wrench, title: "General Bike Service", price: "₹699", desc: "Complete 40-point inspection, cleaning, lubrication, and tuning for all bike brands. Includes chain adjustment, cable lubrication, and minor fixes." },
+  { icon: Droplets, title: "Oil Change", price: "₹299", desc: "Premium engine oil replacement with filter cleaning. We use branded oils — Motul, Castrol, Shell. Keeps your engine running smooth and cool." },
+  { icon: Battery, title: "Battery Replacement", price: "₹199+", desc: "Battery testing, charging, and replacement. We stock all major brands — Exide, Amaron, SF Sonic. Installation included." },
+  { icon: Disc3, title: "Brake Service", price: "₹349", desc: "Brake pad replacement, disc cleaning, drum adjustment, and hydraulic fluid top-up. Ensures maximum stopping power.", },
+  { icon: Settings, title: "Engine Overhaul", price: "₹2,999+", desc: "Full engine strip-down, cleaning, reboring, piston replacement, and rebuild with genuine parts. For bikes that need serious attention." },
+  { icon: Gauge, title: "Performance Tuning", price: "₹599", desc: "Carburetor tuning, chain sprocket adjustment, air filter replacement, and throttle response optimization for peak performance.",  },
+  { icon: Cog, title: "Clutch Plate Service", price: "₹799+", desc: "Clutch plate inspection, adjustment, and replacement. Ensures smooth gear shifts and prevents clutch slipping.",  },
+  { icon: Zap, title: "Electrical Diagnostics", price: "₹399", desc: "Complete electrical system check — wiring, headlights, indicators, horn, starter motor, and charging system diagnostics." },
 ];
 
 const ServicesPage = () => (

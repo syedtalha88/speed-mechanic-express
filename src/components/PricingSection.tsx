@@ -89,7 +89,7 @@ const PricingSection = () => (
     </span>
 
     <a
-      href="/contact"
+      href="https://wa.me/917095338092"
       className="font-heading text-sm font-bold uppercase bg-primary text-primary-foreground px-5 py-2 rounded-md hover:bg-accent transition"
     >
       Contact Us
