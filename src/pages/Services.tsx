@@ -43,7 +43,7 @@ const ServicesPage = () => (
       <section className="section-padding bg-secondary">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            {allServices.map(({ icon: Icon, title, price, desc, time }, idx) => (
+            {allServices.map(({ icon: Icon, title, price, desc }, idx) => (
               <ScrollReveal key={title} variant={idx % 2 === 0 ? "fade-left" : "fade-right"} delay={idx * 80}>
                 <div className="group bg-card border border-border hover-glass-glow overflow-hidden transition-all duration-500 h-full">
                   <div className="h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
