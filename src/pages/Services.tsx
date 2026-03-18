@@ -10,10 +10,10 @@ const allServices = [
   { icon: Wrench, title: "General Bike Service", price: "₹699", desc: "Complete 40-point inspection, cleaning, lubrication, and tuning for all bike brands. Includes chain adjustment, cable lubrication, and minor fixes." },
   { icon: Droplets, title: "Oil Change", price: "₹299", desc: "Premium engine oil replacement with filter cleaning. We use branded oils — Motul, Castrol, Shell. Keeps your engine running smooth and cool." },
   { icon: Battery, title: "Battery Replacement", price: "₹199+", desc: "Battery testing, charging, and replacement. We stock all major brands — Exide, Amaron, SF Sonic. Installation included." },
-  { icon: Disc3, title: "Brake Service", price: "₹349", desc: "Brake pad replacement, disc cleaning, drum adjustment, and hydraulic fluid top-up. Ensures maximum stopping power.", },
+  { icon: Disc3, title: "Brake Service", price: "₹349", desc: "Brake pad replacement, disc cleaning, drum adjustment, and hydraulic fluid top-up. Ensures maximum stopping power." },
   { icon: Settings, title: "Engine Overhaul", price: "₹2,999+", desc: "Full engine strip-down, cleaning, reboring, piston replacement, and rebuild with genuine parts. For bikes that need serious attention." },
-  { icon: Gauge, title: "Performance Tuning", price: "₹599", desc: "Carburetor tuning, chain sprocket adjustment, air filter replacement, and throttle response optimization for peak performance.",  },
-  { icon: Cog, title: "Clutch Plate Service", price: "₹799+", desc: "Clutch plate inspection, adjustment, and replacement. Ensures smooth gear shifts and prevents clutch slipping.",  },
+  { icon: Gauge, title: "Performance Tuning", price: "₹599", desc: "Carburetor tuning, chain sprocket adjustment, air filter replacement, and throttle response optimization for peak performance."  },
+  { icon: Cog, title: "Clutch Plate Service", price: "₹799+", desc: "Clutch plate inspection, adjustment, and replacement. Ensures smooth gear shifts and prevents clutch slipping."  },
   { icon: Zap, title: "Electrical Diagnostics", price: "₹399", desc: "Complete electrical system check — wiring, headlights, indicators, horn, starter motor, and charging system diagnostics." },
 ];
 
@@ -54,7 +54,7 @@ const ServicesPage = () => (
                       </div>
                       <div className="text-right">
                         <span className="font-heading text-xl md:text-2xl font-black text-primary block">{price}</span>
-                        <span className="text-[10px] md:text-xs text-muted-foreground">{time}</span>
+                        <span className="text-[10px] md:text-xs text-muted-foreground">Same Day Service</span>
                       </div>
                     </div>
                     <h2 className="font-heading text-base md:text-xl font-bold uppercase mb-2">{title}</h2>
